@@ -23,18 +23,15 @@ function PostPage({ post }: Props) {
 		handleSubmit,
 		formState: { errors },
 	} = useForm<IFormInput>();
-	console.log(post);
 	const onSubmit: SubmitHandler<IFormInput> = async data => {
 		await fetch("/api/comment", {
 			method: "POST",
 			body: JSON.stringify(data),
 		})
 			.then(() => {
-				console.log(data);
 				setSubmitted(true);
 			})
 			.catch(err => {
-				console.log(err);
 				setSubmitted(false);
 			});
 	};
