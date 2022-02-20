@@ -40,3 +40,5 @@ yarn-error.log*
 
 # vscode
 /.vscode/
+sanitymeduim/config/
+sanitymeduim/plugins/
