@@ -118,7 +118,7 @@ function PostPage({ post }: Props) {
 			) : (
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className="mb-10 flex max-w-2xl flex-col p-5"
+					className="mx-auto mb-10 flex max-w-2xl flex-col p-5"
 				>
 					<h3 className="text-sm text-yellow-500">
 						Enjoyed this article?
@@ -191,10 +191,7 @@ function PostPage({ post }: Props) {
 			)}
 
 			{/* Comments */}
-			<div
-				className="mx-w-2xl my-10 mx-auto flex flex-col
-			space-y-2 p-10 shadow"
-			>
+			<div className="mx-auto my-10 flex max-w-2xl flex-col space-y-2 p-10 shadow shadow-yellow-500">
 				<h3 className="text-4xl">Comments</h3>
 				<hr className="pb-2" />
 				{post.comments.map(comment => (
