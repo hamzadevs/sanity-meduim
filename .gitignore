@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/sanitymeduim/node_modules
+/sanitymeduim/dist
 /.pnp
 .pnp.js
 
@@ -35,3 +37,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# vscode
+/.vscode/
